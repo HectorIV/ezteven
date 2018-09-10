@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div>
+  {{ content }}
+  {% include index_header.html %}
+  <div>
+    {% assign posts= paginator.posts %}
+    {% for post in posts limit:4 %}
+    {% include posts_list.md %}
+    {% endfor %}
+    {% include in-feed-ad.html %}
+    {% for post in posts limit:5 offset:4 %}
+    {% include posts_list.md %}
+    {% endfor %}
+    {% include in-feed-ad.html %}
+    {% for post in posts limit:1 offset:9 %}
+    {% include posts_list.md %}
+    {% endfor %}
+  </div>
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <span class="paginate-btn"><a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">{{ site.data.i18n.anterior[page.locale] }}</a></span>
+    {% endif %}
+    {% if paginator.next_page %}
+    <span class="paginate-btn"><a href="{{ paginator.next_page_path | prepend: site.baseurl }}">{{ site.data.i18n.siguiente[page.locale] }}</a></span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

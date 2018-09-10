@@ -1,0 +1,24 @@
+{% for tagx in page.tags limit:1 %}
+  {% for tag in site.tags %}
+    {% if tag[0] == tagx %}
+      {% assign cant = tag[1] | size %}
+      {% if cant > 1 %}
+      <h2>{{ site.data.i18n.articulos_relacionados[page.locale] }}</h2>
+        {% for post in tag[1] limit: 5 %}
+          {% if post.title != page.title %}
+            <hr>
+            <a href="{{ post.url }}">
+            <div class="post-title">{{ post.title }}</div>
+            <div class="post-date">
+              {% assign m = post.date | date: "%-m" | minus: 1 %}
+              {{ site.data.i18n.meses[page.locale][m] }}
+              · 
+              {{ post.date | date: "%-d" }} 
+            </div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

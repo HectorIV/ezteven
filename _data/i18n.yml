@@ -1,0 +1,112 @@
+url_prefix:
+    es: 
+    pt: /pt
+    en: /en
+title:
+    es: Ezteven blog
+    pt: Ezteven blog
+    en: Ezteven blog
+description:
+    es: Me gusta ver el mundo desde otras perspectivas.
+    pt: Eu gosto de ver o mundo desde outras perspectivas.
+    en: I like to see the world from other perspectives.
+publicaciones:
+    es: Publicaciones
+    pt: Publicações
+    en: Articles
+anterior:
+    es: Anterior
+    pt: Anterior
+    en: Previous
+siguiente:
+    es: Siguiente
+    pt: Próximo
+    en: Next
+por:
+    es: Por
+    pt: Por
+    en: By
+escrito_por:
+    es: Escrito por
+    pt: Escrito por
+    en: Written by
+compartir:
+    es: Compartir
+    pt: Compartilhar
+    en: Share
+articulos_relacionados:
+    es: Relacionados
+    pt: Relacionados
+    en: Related
+buscar:
+    es: Buscar
+    pt: Pesquisar
+    en: Search
+compartir_por:
+    es: Compartir por
+    pt: Compartilhar pelo
+    en: Share by
+new:
+    es: Nuevo
+    pt: Novo
+    en: New
+subscribe:
+    es: Subscribirse
+    pt: Inscreva-se
+    en: Subscribe
+seguir_en:
+    es: Seguir en
+    pt: Siga no
+    en: Follow on
+acerca_de:
+    es: Acerca de
+    pt: Sobre
+    en: About
+inicio:
+    es: Inicio
+    pt: Início
+    en: Home
+ir_home:
+    es: Ir a la página principal
+    pt: Ir à página principal
+    en: Go to main page
+meses:
+  es:
+    - Enero
+    - Febrero
+    - Marzo
+    - Abril
+    - Mayo
+    - Junio
+    - Julio
+    - Agosto
+    - Septiembre
+    - Octubre
+    - Noviembre
+    - Diciembre
+  pt:
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+  en:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December

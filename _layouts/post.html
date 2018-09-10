@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  {% for tag in page.tags %}
+  <a href="{{ site.data.i18n.url_prefix[page.locale] }}/tag/#{{ tag | escape | downcase }}"><code class="highligher-rouge"><nobr>#{{ tag }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+  <br><br>
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+  {% include share_bar.html %}
+  {% include text-display-ad.html %}
+  <div class="sp"></div>
+  {% include suggest_in_post.html %}
+  <hr>
+  {% include disqus.html %}
+</article>

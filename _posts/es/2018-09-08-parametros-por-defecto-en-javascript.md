@@ -7,8 +7,6 @@ thumbnail: /assets/img/thumbnail/default-param.jpg
 categories: Tech
 tags: code javascript
 locale: es
-new_tag: true
-published: false
 
 ---
 

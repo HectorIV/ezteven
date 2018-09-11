@@ -7,7 +7,6 @@ thumbnail: /assets/img/thumbnail/egg-hammer.jpg
 categories: Personal
 tags: reflexiones
 locale: es
-new_tag: true
 
 ---
 

@@ -28,7 +28,7 @@
     {% include script_main.html %}
 
     {% if page.title %}
-      {% assign page-title = page.title | escape %}
+      {% assign page-title = page.title | escape | capitalize %}
     {% else %}
       {% assign page-title = site.title | escape %}
     {% endif %}

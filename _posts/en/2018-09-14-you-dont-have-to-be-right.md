@@ -4,7 +4,7 @@ title: You don't have to be right
 description: When we talk to others, something that would be useful to keep in mind is that we don't have to be right.
 image: /assets/img/desktop/puffy-smile.jpeg
 thumbnail: /assets/img/thumbnail/puffy-smile.jpg
-categories: Personal
+categories: Thoughts
 tags: thoughts
 locale: en
 published: false

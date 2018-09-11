@@ -1,10 +1,6 @@
 <div class="post-row">
   <div class="post-col-left">
-    <div class="post-date">{{ post.categories[0] }} | 
-      {% assign m = post.date | date: "%-m" | minus: 1 %}
-      {{ site.data.i18n.meses[page.locale][m] }}
-       · 
-      {{ post.date | date: "%-d" }}
+    <div class="post-cat">{{ post.categories[0] | upcase }}
     </div>
     <a href="{{ post.url }}">
     <div class="post-title">{{ post.title }}
@@ -13,6 +9,12 @@
     {% endif %}
     </div>
     <div class="post-description">{{ post.description | truncatewords: 15 }}</div>
+    <div class="post-date">
+    {% assign m = post.date | date: "%-m" | minus: 1 %}
+    {{ site.data.i18n.meses[page.locale][m] }}
+     · 
+    {{ post.date | date: "%-d" }}
+    </div>
     </a>
   </div>
   <div class="post-col-right">

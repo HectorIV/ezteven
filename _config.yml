@@ -22,14 +22,13 @@ facebook_username: eztevenblog
 instagram_username: eztevenblog
 twitter_username: EztevenBlog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: eztevenblog
-github_username:  ""
+url: "https://blog.ezteven.com" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-121844997-1
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman-blog
 plugins:
+  - jekyll-algolia
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag

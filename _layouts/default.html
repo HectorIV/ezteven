@@ -33,7 +33,12 @@
       {% assign page-title = site.title | escape %}
     {% endif %}
 
+    {% if page.layout != 'home' %}
+    <title>{{ page-title }} | {{ site.title }}</title>
+    {% else %}
     <title>{{ page-title }}</title>
+    {% endif %}
+    
 
     {% seo %}
 

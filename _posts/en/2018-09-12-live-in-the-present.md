@@ -4,7 +4,7 @@ title: Live in the present
 description: There is so much in the present that requires our attention and dedication to waste time on things that we can not change or that have not happened.
 image: /assets/img/desktop/hourglass-time.jpeg
 thumbnail: /assets/img/thumbnail/hourglass-time.jpg
-categories: Personal
+categories: Thoughts
 tags: thoughts
 locale: en
 ads: false

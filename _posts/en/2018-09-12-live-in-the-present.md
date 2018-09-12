@@ -7,7 +7,6 @@ thumbnail: /assets/img/thumbnail/hourglass-time.jpg
 categories: Personal
 tags: thoughts
 locale: en
-published: false
 ads: false
 
 ---

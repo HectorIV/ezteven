@@ -61,12 +61,15 @@ function suma (a = 0, b = 0) {
   return a + b
 }
 
-suma(5, 5)          // 10
-suma(5, null)       // 5
-suma(5, undefined)  // 5
-suma(5, '')         // 5
-suma(5, 0)          // 5
+suma(5)             // 5    (5 + 0)
+suma(5, undefined)  // 5    (5 + 0)
+suma(5, null)       // 5    (5 + null)
+suma(5, '')         // "5"  (5 + '')
+suma(5, 5)          // 10   (5 + 5)
+suma(5, 0)          // 5    (5 + 0)
 ```
+
+__Vemos que los parámetros por defecto solo se aplican sobre parámetros `undefined`, por lo que recibir `null`, `0` o `''` hará que se usen estos valores en cambio.__
 
 {% include in-article-ad.html %}
 
@@ -77,12 +80,13 @@ function holaMundo(nombre) {
   return 'Hola ' + nombre + '!'
 }
 
-holaMundo()         // 'Hola undefined!'
-holaMundo(null)     // 'Hola null!'
-
-holaMundo('Mundo')  // 'Hola Mundo!'
+holaMundo()           // 'Hola undefined!'
+holaMundo(undefined)  // 'Hola undefined!'
+holaMundo(null)       // 'Hola null!'
+holaMundo('')         // 'Hola !'
+holaMundo('Mundo')    // 'Hola Mundo!'
 ```
-Si no enviamos los parámetros apropiados terminamos con resultados inesperados, en este caso `Hola undefined!` y `Hola null!`.
+Si no enviamos los parámetros apropiados terminamos con resultados inesperados, en este caso `Hola undefined!`.
 
 Podemos corregir esto utilizando parámetros por defecto:
 
@@ -92,11 +96,12 @@ function holaMundo(nombre = 'Mundo') {
 }
 
 holaMundo()           // 'Hola Mundo!'
-holaMundo(null)       // 'Hola Mundo!'
+holaMundo(undefined)  // 'Hola Mundo!'
+holaMundo(null)       // 'Hola null!'
+holaMundo('')         // 'Hola !'
 holaMundo('Mundo')    // 'Hola Mundo!'
-holaMundo('Ezteven')  // 'Hola Ezteven!'
 ```
-Vemos que en caso de que no se envíe ningún parámetro, la función utiliza el default, en este caso, `Mundo`.
+Vemos que en caso de que no se envíe ningún parámetro (undefined), la función utiliza el default, en este caso, `'Mundo'`. Aunque como mencionamos anteriormente, __los parámetros por defecto solo funcionan si el valor recibido es `undefined`__. En caso de recibir como parámetro `0`, `null` o `''` se utilizarán estos valores en cambio.
 
 Ahora veamos otro ejemplo concatenando arreglos:
 
@@ -123,7 +128,7 @@ ensalada(['uvas'])  //  ['uvas']
 ensalada(['manzana', 'pera'], [])  //  ['manzana', 'pera']
 ensalada(['manzana', 'pera'], ['lechuga', 'cebolla'])  //  ['manzana', 'pera', 'lechuga', 'cebolla']
 ```
-Los parámetros por defecto pueden simplificar considerablemente las validaciones a la hora de crear funciones. Estos pueden ser de cualquier tipo, es decir, `number`, `object`, `string`, etc. incluso funciones o parámetros por defecto previamente definidos.
+Los parámetros por defecto pueden simplificar considerablemente las validaciones a la hora de crear funciones. Estos pueden ser de cualquier tipo, es decir, `number`, `object`, `string`, etc. __incluso funciones o parámetros por defecto previamente definidos__.
 
 Por lo cual esto es totalmente válido:
 

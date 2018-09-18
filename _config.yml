@@ -40,7 +40,7 @@ algolia:
     search_only_api_key: 804f8616e8041fa89a9f59194d021ba9
     settings:
         attributesForFaceting:
-            - lang
+            - locale
 defaults:
     -
         scope:

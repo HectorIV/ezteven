@@ -1,5 +1,25 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('year').innerHTML = new Date().getFullYear()
+    var resource = document.createElement('link');
+    var font = document.createElement('link'); 
+    var head = document.getElementsByTagName('head')[0];
+    resource.setAttribute("rel", "stylesheet");
+    font.setAttribute("rel", "stylesheet");
+    resource.setAttribute("href","/assets/css/fontello.css");
+    font.setAttribute("href","https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+    resource.setAttribute("type","text/css");
+    font.setAttribute("type","text/css");
+    head.appendChild(resource); 
+    head.appendChild(font);
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
   });
 </script>

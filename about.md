@@ -15,6 +15,7 @@ Escribo en este blog en mi tiempo libre. Lo hago como una forma de organizar mej
 
 En caso de contacto, escribir a [ezteven@outlook.com](mailto:ezteven@outlook.com)
 
+<br>
 ---
 
 <div class="pagination">

@@ -8,7 +8,6 @@ this.addEventListener('install', event => {
     caches.open(currentCache.offline).then(function(cache) {
       return cache.addAll([
           'offline.html',
-          '/assets/css/style.css?v=',
           '/assets/css/fontello.css',
           '/assets/font/fontello.eot?17398342',
           '/assets/font/fontello.eot?17398342#iefix',

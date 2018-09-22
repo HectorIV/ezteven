@@ -16,9 +16,9 @@
     // configuraciones
     search.addWidget(
       instantsearch.widgets.configure({
-        facets: ['lang'],
+        facets: ['locale'],
         facetFilters: [
-          'lang:{{ page.locale }}'
+          'locale:{{ page.locale }}'
         ]
       })
     )

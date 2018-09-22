@@ -17,6 +17,10 @@ footer {
 .page-header {
   padding: 3rem 6rem;
 }
+.post-header {
+  text-align: center;
+  padding: 3rem 1rem 0rem 1rem;
+}
 .post-title {
   color: #353535;
   font-weight: bold;
@@ -205,5 +209,8 @@ footer {
   }
   .page-header {
     padding: 2rem 1rem;
+  }
+  .post-header {
+    padding: 1rem 1rem 0rem 1rem;
   }
 }

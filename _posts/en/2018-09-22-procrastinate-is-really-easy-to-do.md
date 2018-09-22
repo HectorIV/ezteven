@@ -7,7 +7,6 @@ thumbnail: /assets/img/thumbnail/sleep.jpg
 categories: Thoughts
 tags: thoughts
 locale: en
-published: false
 ads: false
 
 ---
